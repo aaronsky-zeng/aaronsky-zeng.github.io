@@ -6,18 +6,47 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://example.com">
-  <title>blog搭建笔记 | Aaron&#39;s blog</title>
+  <title>静态博客搭建 | Aaron&#39;s blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="article">
-<meta property="og:title" content="blog搭建笔记">
-<meta property="og:url" content="http://example.com/2021/11/28/blog%E6%90%AD%E5%BB%BA%E7%AC%94%E8%AE%B0/index.html">
+  <meta name="description" content="静态博客搭建静态博客，不需要额外搭建数据库系统。推荐hexo框架。 Hexo 是一个快速、简洁且高效的博客框架。使用 Markdown解析文章细节可以查看：https:&#x2F;&#x2F;hexo.io&#x2F;zh-cn&#x2F;docs&#x2F;  安装hexo安装 Hexo 相当简单，需要先安装下列应用程序即可：①  Node.js   （包含node.js本身和npm包管理器）node.js我这里分别安装了Windows和lin">
+<meta property="og:type" content="article">
+<meta property="og:title" content="静态博客搭建">
+<meta property="og:url" content="http://example.com/2021/11/29/%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/index.html">
 <meta property="og:site_name" content="Aaron&#39;s blog">
+<meta property="og:description" content="静态博客搭建静态博客，不需要额外搭建数据库系统。推荐hexo框架。 Hexo 是一个快速、简洁且高效的博客框架。使用 Markdown解析文章细节可以查看：https:&#x2F;&#x2F;hexo.io&#x2F;zh-cn&#x2F;docs&#x2F;  安装hexo安装 Hexo 相当简单，需要先安装下列应用程序即可：①  Node.js   （包含node.js本身和npm包管理器）node.js我这里分别安装了Windows和lin">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="http://example.com/2021/11/28/blog%E6%90%AD%E5%BB%BA%E7%AC%94%E8%AE%B0/1.png">
-<meta property="article:published_time" content="2021-11-28T05:22:06.000Z">
-<meta property="article:modified_time" content="2021-11-28T05:31:19.036Z">
+<meta property="og:image" content="http://example.com/2021/11/29/%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/hexo.png">
+<meta property="og:image" content="http://example.com/2021/11/29/%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/windowsource.png">
+<meta property="og:image" content="http://example.com/2021/11/29/%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/hexo_g.png">
+<meta property="og:image" content="http://example.com/2021/11/29/%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/public.png">
+<meta property="og:image" content="http://example.com/2021/11/29/%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/public2.png">
+<meta property="og:image" content="http://example.com/2021/11/29/%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/install_nginx.png">
+<meta property="og:image" content="http://example.com/2021/11/29/%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/install_nginx2.png">
+<meta property="og:image" content="http://example.com/2021/11/29/%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/copytolinux.png">
+<meta property="og:image" content="http://example.com/2021/11/29/%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/copytolinux2.png">
+<meta property="og:image" content="http://example.com/2021/11/29/%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/site-avaliable-default.png">
+<meta property="og:image" content="http://example.com/2021/11/29/%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/create_res_in_github.png">
+<meta property="og:image" content="http://example.com/2021/11/29/%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/git_install.png">
+<meta property="og:image" content="http://example.com/2021/11/29/%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/modify_config.png">
+<meta property="og:image" content="http://example.com/2021/11/29/%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/hexo_d.png">
+<meta property="og:image" content="http://example.com/2021/11/29/%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/change_theme.png">
+<meta property="og:image" content="http://example.com/2021/11/29/%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/change_theme2.png">
+<meta property="og:image" content="http://example.com/2021/11/29/%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/theme_config.png">
+<meta property="og:image" content="http://example.com/2021/11/29/%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/github_token1.png">
+<meta property="og:image" content="http://example.com/2021/11/29/%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/github_token2.png">
+<meta property="og:image" content="http://example.com/2021/11/29/%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/github_token3.png">
+<meta property="og:image" content="http://example.com/2021/11/29/%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/github_token4.png">
+<meta property="og:image" content="http://example.com/2021/11/29/%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/hexo_new.png">
+<meta property="og:image" content="http://example.com/2021/11/29/%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/hexo_new2.png">
+<meta property="og:image" content="http://example.com/2021/11/29/%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/hexo_new3.png">
+<meta property="og:image" content="http://example.com/2021/11/29/%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/hexo_new4.png">
+<meta property="og:image" content="http://example.com/2021/11/29/%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/hexo_new5.png">
+<meta property="og:image" content="http://example.com/2021/11/29/%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/cnmp_hexo.png">
+<meta property="og:image" content="http://example.com/2021/11/29/%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/cnmp_hexo2.png">
+<meta property="article:published_time" content="2021-11-29T08:32:50.000Z">
+<meta property="article:modified_time" content="2021-11-30T07:32:48.936Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="http://example.com/2021/11/28/blog%E6%90%AD%E5%BB%BA%E7%AC%94%E8%AE%B0/1.png">
+<meta name="twitter:image" content="http://example.com/2021/11/29/%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/hexo.png">
   
     <link rel="alternative" href="/atom.xml" title="Aaron&#39;s blog" type="application/atom+xml">
   
@@ -149,27 +178,148 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-blog搭建笔记" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-静态博客搭建" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      blog搭建笔记
+      静态博客搭建
     </h1>
   
 
         
-        <a href="/2021/11/28/blog%E6%90%AD%E5%BB%BA%E7%AC%94%E8%AE%B0/" class="archive-article-date">
-  	<time datetime="2021-11-28T05:22:06.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-11-28</time>
+        <a href="/2021/11/29/%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/" class="archive-article-date">
+  	<time datetime="2021-11-29T08:32:50.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-11-29</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p><img src="/2021/11/28/blog%E6%90%AD%E5%BB%BA%E7%AC%94%E8%AE%B0/1.png" alt="pic"></p>
+        <h2 id="静态博客搭建"><a href="#静态博客搭建" class="headerlink" title="静态博客搭建"></a>静态博客搭建</h2><p>静态博客，不需要额外搭建数据库系统。推荐hexo框架。</p>
+<p>Hexo 是一个快速、简洁且高效的博客框架。使用 Markdown解析文章<br>细节可以查看：<br><a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/docs/">https://hexo.io/zh-cn/docs/</a></p>
+<hr>
+<h3 id="安装hexo"><a href="#安装hexo" class="headerlink" title="安装hexo"></a>安装hexo</h3><p>安装 Hexo 相当简单，需要<strong>先安装</strong>下列应用程序即可：<br>①  Node.js   （包含node.js本身和npm包管理器）<br>node.js我这里分别安装了Windows和linux的。<br>linux的安装内容见下面：<em><strong>linux 安装node，hexo-cli，并部署到GitHub</strong></em></p>
+<p>②    Git<br>稍后装git</p>
+<p>所有必备的应用程序安装完成后，即可使用 npm 安装 Hexo。</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> npm install -g hexo-cli</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> hexo	<span class="comment">#查看是否完成安装</span></span></span><br></pre></td></tr></table></figure>
+
+<p><img src="/2021/11/29/%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/hexo.png" alt="hexo"></p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash">hexo init D:\www 		<span class="comment">#在你指定的文件夹初始化hexo框架</span></span></span><br><span class="line"><span class="meta">#</span><span class="bash"> 或者先进入你指定的目录，再hexo init</span></span><br><span class="line"><span class="meta">$</span><span class="bash"><span class="built_in">cd</span> D:\www			<span class="comment">#进入你指定的文件夹</span></span></span><br><span class="line"><span class="meta">$</span><span class="bash">hexo s				<span class="comment">#启动hexo框架</span></span></span><br></pre></td></tr></table></figure>
+
+<p>打开浏览器，输入”localhost:4000” 查看。有helloworld页面表示初始化成功。</p>
+<h3 id="编写自己的第一个blog页面"><a href="#编写自己的第一个blog页面" class="headerlink" title="编写自己的第一个blog页面"></a>编写自己的第一个blog页面</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> hexo new <span class="string">&quot;markdown笔记&quot;</span></span></span><br></pre></td></tr></table></figure>
+
+<p>一般都是用markdown写博客的。语法见本文后面：<strong>需要简单学习一下markdown语法</strong>。</p>
+<p>创建后的源码路径：/www/source/_posts/</p>
+<p><img src="/2021/11/29/%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/windowsource.png" alt="windowns path"></p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash"> 回到 www层</span></span><br><span class="line"><span class="meta">$</span><span class="bash">hexo clean</span></span><br><span class="line"><span class="meta">$</span><span class="bash">hexo g				<span class="comment">#将自己写的md文件转化为html文件</span></span></span><br></pre></td></tr></table></figure>
+
+<p><img src="/2021/11/29/%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/hexo_g.png" alt="hexo g">执行完hexo g后，会在当前目录下生成public目录。</p>
+<p><img src="/2021/11/29/%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/public.png" alt="public"></p>
+<p><img src="/2021/11/29/%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/public2.png" alt="public2"></p>
+<p>命令行回到www，然后在此启动“hexo s”，在浏览器输入”localhost:4000”</p>
+<p>基于本地的blog搭建完成。</p>
+<hr>
+<h3 id="部署到服务器"><a href="#部署到服务器" class="headerlink" title="部署到服务器"></a>部署到服务器</h3><p>如果想把本地的blog部署到服务器上：</p>
+<p>linux服务器端：</p>
+<p><img src="/2021/11/29/%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/install_nginx.png" alt="nginx install"></p>
+<p><img src="/2021/11/29/%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/install_nginx2.png" alt="nginx 2"></p>
+<p>安装Nginx，并启动Nginx：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">sudo apt install nginx</span><br><span class="line">sudo /etc/init.d/nginx start</span><br></pre></td></tr></table></figure>
+
+<p>浏览器输入服务器ip，看到Nginx页面即安装成功。</p>
+<p>将Windows中的整个www文件夹，拷贝到服务器；（或者在linux重新按照上面的步骤在做一遍）：</p>
+<p><img src="/2021/11/29/%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/copytolinux.png" alt="copy to linux"></p>
+<p><img src="/2021/11/29/%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/copytolinux2.png" alt="copy to linux2"></p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo vim /etc/nginx/sites-available/default</span><br></pre></td></tr></table></figure>
+
+<p><img src="/2021/11/29/%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/site-avaliable-default.png" alt="nginx default"></p>
+<p>注意，分号不要忘了。</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo /etc/init.d/nginx reload</span><br></pre></td></tr></table></figure>
+
+<p>重新在浏览器输入服务器ip。你可以看到你的blog了。</p>
+<hr>
+<h3 id="部署到github"><a href="#部署到github" class="headerlink" title="部署到github"></a>部署到github</h3><p>①GitHub上新建一个库</p>
+<p><img src="/2021/11/29/%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/create_res_in_github.png" alt="create res in github"></p>
+<p>②安装git</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">cd D:/www</span><br><span class="line">npm install --save hexo-deployer-git</span><br></pre></td></tr></table></figure>
+
+<p><img src="/2021/11/29/%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/git_install.png" alt="git install"></p>
+<p>③修改 _config.yml：</p>
+<p><img src="/2021/11/29/%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/modify_config.png" alt="modify _config"></p>
+<p>④使用hexo d，将本地blog部署到GitHub上。</p>
+<p><img src="/2021/11/29/%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/hexo_d.png" alt="hexo d"></p>
+<p>访问：</p>
+<p><a target="_blank" rel="noopener" href="https://aaronsky-zeng.github.io/">https://aaronsky-zeng.github.io/</a></p>
+<hr>
+<h3 id="更换主题"><a href="#更换主题" class="headerlink" title="更换主题"></a>更换主题</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">cd d:/www</span><br><span class="line">git clone https://github.com/litten/hexo-theme-yilia.git themes/yilia</span><br><span class="line">npm i hexo-generator-json-content --save</span><br><span class="line">vim _config.yml       </span><br></pre></td></tr></table></figure>
+
+<p><img src="/2021/11/29/%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/change_theme.png" alt="change theme"></p>
+<p><img src="/2021/11/29/%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/change_theme2.png" alt="theme2"></p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo clean</span><br><span class="line">hexo g</span><br><span class="line">hexo s</span><br></pre></td></tr></table></figure>
+
+<p>在浏览器中查看   localhost:4000</p>
+<p>如果需要修改theme，那么修改如下路径_config.yml内容：</p>
+<p><img src="/2021/11/29/%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/theme_config.png" alt="theme _config"></p>
+<p>在浏览器中查看   localhost:4000</p>
+<hr>
+<h3 id="linux-安装node，hexo-cli，并部署到GitHub"><a href="#linux-安装node，hexo-cli，并部署到GitHub" class="headerlink" title="linux 安装node，hexo-cli，并部署到GitHub"></a>linux 安装node，hexo-cli，并部署到GitHub</h3><p>Node 官网已经把 linux 下载版本更改为已编译好的版本了，我们可以直接下载解压后使用：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line">xz -d node-v16.13.0-linux-x64.tar.xz</span><br><span class="line">tar -xvf node-v16.13.0-linux-x64.tar</span><br><span class="line">sudo mv node-v16.13.0-linux-x64 /opt/</span><br><span class="line">sudo ln -s /opt/node-v16.13.0-linux-x64/bin/npm   /usr/local/bin/</span><br><span class="line">sudo ln -s /opt/node-v16.13.0-linux-x64/bin/node   /usr/local/bin/</span><br><span class="line">sudo ln -s /opt/node-v16.13.0-linux-x64/bin/hexo /usr/local/bin/hexo</span><br><span class="line"></span><br><span class="line">npm -v</span><br><span class="line">node -v</span><br><span class="line"></span><br><span class="line">cd ~/www/</span><br><span class="line">sudo apt-get install nodejs   （##多余）</span><br><span class="line">sudo apt-get install npm		（##多余）</span><br><span class="line">sudo npm install -g hexo-cli</span><br><span class="line"></span><br><span class="line">npm install --save hexo-deployer-git</span><br><span class="line">git config --global user.email 369792011@qq.com</span><br><span class="line">git config --global user.name aaronsky-zeng</span><br><span class="line">git config --global http.postBuffer 524288000</span><br><span class="line"></span><br><span class="line">rm .deploy_git -rf</span><br><span class="line">git config --global core.autocrlf false</span><br><span class="line">hexo clean</span><br><span class="line">hexo g</span><br><span class="line">hexo d</span><br></pre></td></tr></table></figure>
+
+<p>这里需要输入用户名和密码：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Username for &#x27;https://github.com&#x27;: aaronsky-zeng</span><br><span class="line">Password for &#x27;https://aaronsky-zeng@github.com&#x27;:</span><br></pre></td></tr></table></figure>
+
+<p>这里的密码是github的token，不是你的github登录密码。如何获得？</p>
+<p><img src="/2021/11/29/%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/github_token1.png" alt="github token1"></p>
+<p><img src="/2021/11/29/%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/github_token2.png" alt="github token2"></p>
+<p><img src="/2021/11/29/%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/github_token3.png" alt="github token3"></p>
+<p><img src="/2021/11/29/%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/github_token4.png" alt="github token4"></p>
+<p>复制这行token。填到上面的passwd。这串只能用一个月。</p>
+<hr>
+<h3 id="无法显示图片"><a href="#无法显示图片" class="headerlink" title="无法显示图片"></a>无法显示图片</h3><p>node_modules\hexo-asset-image下面有一个README.md这文件,里面写的是如何使用.</p>
+<p>配置文件_config.yml 里的post_asset_folder:这个选项设置为true</p>
+<p>①</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">![1](http://localhost:4000/img/1.png)</span><br></pre></td></tr></table></figure>
+
+<p>我理解 <a target="_blank" rel="noopener" href="http://localhost:4000/">http://localhost:4000</a>  ==&gt; /www/public/</p>
+<p>因为第一个打开的index.html就是/www/public/目录下的index.html,而且 /www/public/下有img目录。</p>
+<p>所以用markdown写的的时候，图片路径指定 /www/public/img 相当于==&gt;   <a target="_blank" rel="noopener" href="http://localhost:4000/img%EF%BC%9B">http://localhost:4000/img；</a></p>
+<p>②</p>
+<p>也可以不指定。</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">![1]([/img/1.png)](http://localhost:4000/img/1.png))</span><br></pre></td></tr></table></figure>
+
+<p>脚本会自动加上“<a href="http://localhost:4000”">http://localhost:4000”</a> 补全。</p>
+<p>可以将图片放到/www/public/img这里（hexo clean后就都没了）。</p>
+<p>③</p>
+<p>在网上发现其他方法：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install https://github.com/7ym0n/hexo-asset-image --save</span><br></pre></td></tr></table></figure>
+
+<p>安装完之后，当我们创建新文章时 <em><strong>hexo new “blog搭建比较”</strong></em> ，就自动在创建“blog搭建笔记.md”文件的同目录下创建一个同名的文件夹：</p>
+<p><img src="/2021/11/29/%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/hexo_new.png" alt="hexo new"></p>
+<p><img src="/2021/11/29/%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/hexo_new2.png" alt="hexo new2"></p>
+<p>拷贝一张图片到文件夹下：</p>
+<p><img src="/2021/11/29/%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/hexo_new3.png" alt="hexo new3"></p>
+<p>编辑blog搭建笔记.md，只写了显示图片这行：</p>
+<p><img src="/2021/11/29/%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/hexo_new4.png" alt="hexo new4"></p>
+<p>看结果,图片可以直接显示了:</p>
+<p><img src="/2021/11/29/%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/hexo_new5.png" alt="hexo new 5"></p>
+<p>这种方法最直接。hexo d部署到GitHub也没有问题。</p>
+<hr>
+<h2 id="补充"><a href="#补充" class="headerlink" title="补充"></a>补充</h2><p>============不能用cnpm的直接用npm====</p>
+<p>使用cnpm安装hexo：</p>
+<p><img src="/2021/11/29/%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/cnmp_hexo.png" alt="cnpm"></p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> npm install -g cnpm --registry=https://registry.npm.taobao.org</span></span><br></pre></td></tr></table></figure>
+
+<p>基于淘宝的源？？</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> cnpm install -g hexo-cli</span></span><br></pre></td></tr></table></figure>
+
+<p><img src="/2021/11/29/%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/cnmp_hexo2.png" alt="cnpm hexo2"></p>
+<hr>
+<p><strong>需要简单学习一下markdown语法</strong></p>
+<p>Markdown is a text-to-HTML conversion tool for web writers.<br><a target="_blank" rel="noopener" href="http://192.168.1.134/2021/11/27/markdown%E7%AC%94%E8%AE%B0/">Markdown</a><br>markdown编辑器， typora(安装)</p>
 
       
 
@@ -249,7 +399,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://example.com/2021/11/28/blog%E6%90%AD%E5%BB%BA%E7%AC%94%E8%AE%B0/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=http://example.com/2021/11/29/%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -263,18 +413,9 @@
   
 <nav id="article-nav">
   
-    <a href="/2021/11/29/%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          静态博客搭建
-        
-      </div>
-    </a>
   
-  
-    <a href="/2021/11/27/markdown%E7%AC%94%E8%AE%B0/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">markdown笔记</div>
+    <a href="/2021/11/28/blog%E6%90%AD%E5%BB%BA%E7%AC%94%E8%AE%B0/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">blog搭建笔记</div>
       <i class="icon-circle-right"></i>
     </a>
   
