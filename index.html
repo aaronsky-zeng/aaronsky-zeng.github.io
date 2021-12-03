@@ -147,6 +147,245 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-多个yocto共享download" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2021/12/03/%E5%A4%9A%E4%B8%AAyocto%E5%85%B1%E4%BA%ABdownload/">多个yocto共享download</a>
+    </h1>
+  
+
+        
+        <a href="/2021/12/03/%E5%A4%9A%E4%B8%AAyocto%E5%85%B1%E4%BA%ABdownload/" class="archive-article-date">
+  	<time datetime="2021-12-03T08:01:19.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-12-03</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>将之前的yocto下的downloads都拷贝到/home/aaron/Downloads/yocto_downloads/这个目录下。</p>
+<p>删除原来yocto中的downloads目录。<br>修改local.conf文件：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">cd /disk2/aaron/workstation_s32G/fsl-yocto-30.0/build_s32g274ardb2/conf</span><br><span class="line">vim local.conf</span><br><span class="line"></span><br><span class="line">	修改：DL_DIR = &quot;/home/aaron/Downloads/yocto_downloads&quot;</span><br></pre></td></tr></table></figure>
+<p>  这里要用绝对路径。</p>
+<p>这样可以避免重复下载。<br>Done！</p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">Linux Yocto</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2021/12/03/%E5%A4%9A%E4%B8%AAyocto%E5%85%B1%E4%BA%ABdownload/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-公司内部远程拉取yocto-downloads文件夹" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2021/12/03/%E5%85%AC%E5%8F%B8%E5%86%85%E9%83%A8%E8%BF%9C%E7%A8%8B%E6%8B%89%E5%8F%96yocto-downloads%E6%96%87%E4%BB%B6%E5%A4%B9/">公司内部远程拉取yocto_downloads文件夹</a>
+    </h1>
+  
+
+        
+        <a href="/2021/12/03/%E5%85%AC%E5%8F%B8%E5%86%85%E9%83%A8%E8%BF%9C%E7%A8%8B%E6%8B%89%E5%8F%96yocto-downloads%E6%96%87%E4%BB%B6%E5%A4%B9/" class="archive-article-date">
+  	<time datetime="2021-12-03T07:31:22.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-12-03</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h3 id="win10-开启ssh-server服务-远程登录"><a href="#win10-开启ssh-server服务-远程登录" class="headerlink" title="win10 开启ssh server服务 远程登录"></a>win10 开启ssh server服务 远程登录</h3><p><a target="_blank" rel="noopener" href="https://blog.csdn.net/weixin_43064185/article/details/90080815">win10开启ssh server</a></p>
+<h4 id="开启SSH"><a href="#开启SSH" class="headerlink" title="开启SSH"></a>开启SSH</h4><p>安装OpenSSH服务器和客户端<br><img src="/2021/12/03/%E5%85%AC%E5%8F%B8%E5%86%85%E9%83%A8%E8%BF%9C%E7%A8%8B%E6%8B%89%E5%8F%96yocto-downloads%E6%96%87%E4%BB%B6%E5%A4%B9/ssh1.JPG"><br><img src="/2021/12/03/%E5%85%AC%E5%8F%B8%E5%86%85%E9%83%A8%E8%BF%9C%E7%A8%8B%E6%8B%89%E5%8F%96yocto-downloads%E6%96%87%E4%BB%B6%E5%A4%B9/ssh2.JPG"><br><img src="/2021/12/03/%E5%85%AC%E5%8F%B8%E5%86%85%E9%83%A8%E8%BF%9C%E7%A8%8B%E6%8B%89%E5%8F%96yocto-downloads%E6%96%87%E4%BB%B6%E5%A4%B9/ssh3.JPG"></p>
+<p>添加功能: 找到openssh 服务器<br><img src="/2021/12/03/%E5%85%AC%E5%8F%B8%E5%86%85%E9%83%A8%E8%BF%9C%E7%A8%8B%E6%8B%89%E5%8F%96yocto-downloads%E6%96%87%E4%BB%B6%E5%A4%B9/ssh4.JPG"></p>
+<h4 id="验证安装"><a href="#验证安装" class="headerlink" title="验证安装"></a>验证安装</h4><p>在cmd界面输入ssh，验证客户端<br><img src="/2021/12/03/%E5%85%AC%E5%8F%B8%E5%86%85%E9%83%A8%E8%BF%9C%E7%A8%8B%E6%8B%89%E5%8F%96yocto-downloads%E6%96%87%E4%BB%B6%E5%A4%B9/ssh5.JPG"></p>
+<h4 id="验证是否可以ssh到公司服务器："><a href="#验证是否可以ssh到公司服务器：" class="headerlink" title="验证是否可以ssh到公司服务器："></a>验证是否可以ssh到公司服务器：</h4><p><img src="/2021/12/03/%E5%85%AC%E5%8F%B8%E5%86%85%E9%83%A8%E8%BF%9C%E7%A8%8B%E6%8B%89%E5%8F%96yocto-downloads%E6%96%87%E4%BB%B6%E5%A4%B9/ssh6.JPG"></p>
+<h3 id="远程拉取yocto-downloads包"><a href="#远程拉取yocto-downloads包" class="headerlink" title="远程拉取yocto_downloads包"></a>远程拉取yocto_downloads包</h3><p>在Windows本地D盘，新建aaaa文件夹，cmd进入：<br><img src="/2021/12/03/%E5%85%AC%E5%8F%B8%E5%86%85%E9%83%A8%E8%BF%9C%E7%A8%8B%E6%8B%89%E5%8F%96yocto-downloads%E6%96%87%E4%BB%B6%E5%A4%B9/aaaa.JPG"><br>使用scp命令，将整个yocto_downloads下载到本地：<br><code>scp -r aaron@10.5.67.11:/home/aaron/Downloads/yocto_downloads .</code><br><img src="/2021/12/03/%E5%85%AC%E5%8F%B8%E5%86%85%E9%83%A8%E8%BF%9C%E7%A8%8B%E6%8B%89%E5%8F%96yocto-downloads%E6%96%87%E4%BB%B6%E5%A4%B9/scp.png"></p>
+<p>Done!</p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">Linux</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2021/12/03/%E5%85%AC%E5%8F%B8%E5%86%85%E9%83%A8%E8%BF%9C%E7%A8%8B%E6%8B%89%E5%8F%96yocto-downloads%E6%96%87%E4%BB%B6%E5%A4%B9/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-文件夹分卷压缩与合并" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2021/12/03/%E6%96%87%E4%BB%B6%E5%A4%B9%E5%88%86%E5%8D%B7%E5%8E%8B%E7%BC%A9%E4%B8%8E%E5%90%88%E5%B9%B6/">文件夹分卷压缩与合并</a>
+    </h1>
+  
+
+        
+        <a href="/2021/12/03/%E6%96%87%E4%BB%B6%E5%A4%B9%E5%88%86%E5%8D%B7%E5%8E%8B%E7%BC%A9%E4%B8%8E%E5%90%88%E5%B9%B6/" class="archive-article-date">
+  	<time datetime="2021-12-03T07:05:01.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-12-03</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>整个yocto环境非常大，大约150G左右。<br>如果出错每次重新编译都是一个繁琐的过程。</p>
+<p>将downloads目录存起来，便于之后的使用。<br>准备将这个目录上传到百度网盘,分享给同事。但是，百度网盘上传文件有大小的限制。</p>
+<p>所以决定将这个文件夹分卷压缩上传。<br>(1)<br><code>$tar cvzf - yocto_downloads | split -d -b 2048m - yocto_downloadsdir</code><br>将downloads目录分卷压缩，每个2G大小，名称为<code>yocto_downloadsdir**</code>，其中<code>**</code>为数字，从00开始。</p>
+<p>输出的文件为 yocto_downloadsdir00，yocto_downloadsdir01，yocto_downloadsdir02，…<br>如果不加yocto_downloadsdir，则输出文件为 x00、x01、x02 …<br>如果不加参数 -d，则输出aa、ab、ac …</p>
+<p>yocto_downloads大小为59G，分卷压缩之后，如下：<br><img src="/2021/12/03/%E6%96%87%E4%BB%B6%E5%A4%B9%E5%88%86%E5%8D%B7%E5%8E%8B%E7%BC%A9%E4%B8%8E%E5%90%88%E5%B9%B6/yoctoDownload.JPG" alt="yoctoDownload"></p>
+<p>(2)<br>下载下来后如何使用呢？</p>
+<p>首先将分卷包合并<br><code>cat yocto_downloadsdir* &gt; yocto_downloads.tar.gz</code><br>然后解压<br><code>tar xzvf yocto_downloads.tar.gz</code></p>
+<p>Done!</p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">Linux</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2021/12/03/%E6%96%87%E4%BB%B6%E5%A4%B9%E5%88%86%E5%8D%B7%E5%8E%8B%E7%BC%A9%E4%B8%8E%E5%90%88%E5%B9%B6/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-静态博客搭建" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -654,6 +893,14 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
             <input type="checkbox" q-on="click:toggleTag(e)" q-attr="checked:showTags">
           </label>
           <ul class="article-tag-list" q-show="showTags">
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">Linux</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">Linux Yocto</a>
+              </li>
             
             <div class="clearfix"></div>
           </ul>
