@@ -187,7 +187,6 @@
 <hr>
 <p>先看一看服务长什么样：</p>
 <p><img src="/2021/12/23/systemd%E5%85%A5%E9%97%A8/systemctl_cat_nginx.JPG" alt="nginx"></p>
-<hr>
 <h5 id="service-unit-file文件通常由三部分组成"><a href="#service-unit-file文件通常由三部分组成" class="headerlink" title="service unit file文件通常由三部分组成"></a><strong>service unit file文件通常由三部分组成</strong></h5><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">[Unit]:定义与unit类型无关的通用选项；用于提供unit的描述信息、unit行为以及依赖关系等。</span><br><span class="line">例如：</span><br><span class="line">	Description=本service描述信息</span><br><span class="line">	After=依赖</span><br><span class="line">	Documentation=帮助文档</span><br><span class="line"></span><br><span class="line">[Service]：与特定类型相关的专用选项；此处为service类型</span><br><span class="line"></span><br><span class="line">[Install]：定义由“systemctl enable”以及“systemctl disable”命令在实现服务启用或禁用时用到的一些选项。</span><br></pre></td></tr></table></figure>
 
 <h5 id="service-unit文件格式"><a href="#service-unit文件格式" class="headerlink" title="service unit文件格式"></a><strong>service unit文件格式</strong></h5><p>在unit文件中，注释用#。<br>相关布尔值：<br>1，yes，on，true都是开启；<br>0，no，off，false都是关闭；<br>时间单位默认是秒，所以毫秒ms，分钟m等需要显式说明。</p>
